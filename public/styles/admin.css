@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    color: #0050a1;
+}
+.admin-container {
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(to bottom, #0066ff, #0050a1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.sidebar a:hover {
+    opacity: 1;
+    background-color: rgba(255,255,255,0.1);
+}
+.main-content {
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 0;
+}
+@media (min-width: 768px) {
+    .main-content {
+        margin-left: 16.666667%; /* Corresponds to col-md-2 */
+    }
+}
+.metric-card {
+    transition: transform 0.3s ease;
+}
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+/* Additional styling for sidebar to enhance gradient effect */
+.sidebar-profile {
+    background-color: rgba(0,0,0,0.2);
+}
