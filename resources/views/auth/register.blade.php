@@ -102,7 +102,7 @@
             </button>
 
             <div class="text-center mt-3 text-primary">
-                <a href="{{ route('login') }}" class="text-primary">Already have an account? Sign in</a>
+                Already have an account? <a href="{{ route('login') }}" class="text-primary"> Sign in</a>
             </div>
         </form>
     </div>

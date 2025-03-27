@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- AOS CSS -->
-  
+
   @hasSection('styles')
     @yield('styles')
   @endif
@@ -24,45 +24,48 @@
 
 <body>
   <div id="app">
-    <nav>
-      <div class="nav-container">
-        <img src="https://ucarecdn.com/c630466c-0578-4d87-8f48-28e3f95cd5f4/-/format/auto/" alt="BITS Logo"
-          class="nav-logo">
+    @hasSection('nav')
+    @yield('nav')
+  @else
+  <nav>
+    <div class="nav-container">
+    <img src="https://ucarecdn.com/c630466c-0578-4d87-8f48-28e3f95cd5f4/-/format/auto/" alt="BITS Logo"
+      class="nav-logo">
 
-        <div class="hamburger-menu" id="hamburgerMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-        <div class="nav-links" id="navLinks">
+    <div class="nav-links" id="navLinks">
 
-          @auth
-            <a href=" {{route('home')}} ">Home</a>
-            <a href="{{ route('about.us') }}">About Us</a>
-            <form action="{{ route('logout') }}" method="post">
-              @csrf
-              <button id="logout" style="border: none;color:#0066ff; background-color: white;">Logout</button>
-            </form>
-          @endauth
-          
-          @guest
-            <a href=" {{ route('login') }} ">Login</a>
-            <a href=" {{ route('register') }} ">Register</a>
-            <a href="{{ route('about.us') }}">About Us</a>
-          @endguest
+      @auth
+      <a href=" {{route('user.home')}} ">Home</a>
+      <a href="{{ route('about.us') }}">About Us</a>
+      <form action="{{ route('logout') }}" method="post">
+      @csrf
+      <button id="logout" style="border: none;color:#0066ff; background-color: white;">Logout |
+      {{ auth()->user()->name  }}</button>
+      </form>
+    @endauth
 
-        </div>
-      </div>
-    </nav>
+      @guest
+      <a href=" {{ route('login') }} ">Login</a>
+      <a href=" {{ route('register') }} ">Register</a>
+      <a href="{{ route('about.us') }}">About Us</a>
+    @endguest
+
+    </div>
+    </div>
+  </nav>
+@endif
+
     <main>
       @yield('content')
     </main>
   </div>
 
-  @hasSection('scripts')
-    @yield('scripts')
-  @endif
 
   <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -87,6 +90,12 @@
       });
     });
   </script>
+
+
+  @hasSection('scripts')
+    @yield('scripts')
+  @endif
+
 </body>
 
 </html>

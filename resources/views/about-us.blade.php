@@ -86,6 +86,52 @@
         </div>
     </section>
 
+      <!-- Vision Section -->
+      <section class="py-5 bg-light" id="vision" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center order-md-1" data-aos="fade-right">
+                    <i class="fas fa-trophy vision-icon"></i>
+                </div>
+                <div class="col-md-6 order-md-2" data-aos="fade-left">
+                    <h2 class="mb-4 display-6">Our Goal</h2>
+                    <p class="lead">
+                        By 2040, Southern Leyte State University is a leading higher education institution that advances
+                        knowledge and will be known for innovation and compassion for humanity, creating an inclusive
+                        society and a sustainable world.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-3"></i>
+                                <span>Digital Literacy for All</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-3"></i>
+                                <span>Innovative Learning Ecosystem</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-3"></i>
+                                <span>Community-Driven Technology</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-3"></i>
+                                <span>Sustainable Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Contact Section -->
     <section class="bg-dark-blue text-white text-center py-5">
         <div class="container">

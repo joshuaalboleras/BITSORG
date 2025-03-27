@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title',"Welcome")
 @section('content')
   <header>
     <div class="floating-tech-shapes">
