@@ -155,9 +155,10 @@ header p {
 }
 
 .programs-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+ display: flex;
+ justify-content: center;
+ gap: 1.5rem;
+ flex-wrap: wrap;
 }
 
 .program-card {

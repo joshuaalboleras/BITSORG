@@ -1,0 +1,49 @@
+body {
+    background-color: #f4f6f9;
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(to right, #0066FF, #003366);
+}
+
+.decorative-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #0066FF, #003366);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.top-left-circle {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.top-right-circle {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.bottom-left-circle {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+}
+
+.bottom-right-circle {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.contact-header {
+    background: linear-gradient(to right, #0066FF, #003366);
+    border-radius: 0.75rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}

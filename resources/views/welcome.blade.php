@@ -83,7 +83,7 @@
       <div class="footer-contact">
         <p><i class="fas fa-envelope"></i> Email: contact@bontocit.org</p>
         <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
-        <p><i class="fas fa-map-marker-alt"></i> Bontoc, Mountain Province</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bontoc, Southern Leyte</p>
       </div>
       </div>
 
@@ -92,15 +92,15 @@
       <ul class="footer-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Programs</a></li>
-        <li><a href="#">Join Us</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href=" {{ route('register') }} ">Join Us</a></li>
+        <li><a href="{{ route('about.us') }}">About</a></li>
       </ul>
       </div>
 
       <div class="footer-column">
       <h3>Follow Us</h3>
       <div class="social-links">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/slsubitsofficial/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>

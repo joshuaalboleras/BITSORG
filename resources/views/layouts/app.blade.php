@@ -42,7 +42,12 @@
 
       @auth
       <a href=" {{route('user.home')}} ">Home</a>
+      <a href=" {{route('user.faculty')}} ">Faculty & Staff</a>
       <a href="{{ route('about.us') }}">About Us</a>
+      <a href=" {{route('user.contact')}} ">Contact Us</a>
+      @hasSection('nav-links')
+        @yield('nav-links')
+      @endif
       <form action="{{ route('logout') }}" method="post">
       @csrf
       <button id="logout" style="border: none;color:#0066ff; background-color: white;">Logout |

@@ -1,0 +1,41 @@
+:root {
+    --primary-blue: #0066FF;
+    --dark-blue: #003366;
+    --light-blue: #E6F0FF;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.btn-custom {
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn-custom.active {
+    background: linear-gradient(to right, var(--primary-blue), var(--dark-blue));
+    color: white;
+}
+
+.staff-section {
+    background-color: var(--light-blue);
+}
+
+.staff-card {
+    border: 2px solid rgba(0, 102, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: scale(1.03);
+}
+
+.staff-image {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border: 4px solid rgba(0, 102, 255, 0.2);
+    border-radius: 50%;
+}

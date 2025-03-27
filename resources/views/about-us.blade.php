@@ -141,7 +141,7 @@
                 <a href="#" class="text-white mx-2 hover-scale"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="#" class="text-white mx-2 hover-scale"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
-            <button class="btn btn-light text-primary px-5 py-3">Contact Us</button>
+            <a href="{{ route('user.contact') }}" class="btn btn-light text-primary px-5 py-3">Contact Us</a>
         </div>
     </section>
 

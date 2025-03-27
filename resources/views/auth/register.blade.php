@@ -4,16 +4,16 @@
     <link rel="stylesheet" href="{{asset('styles/register.css')}}">
 @endsection
 @section('content')
-<div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-primary">
+<div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-primary" >
     <div class="bg-white rounded shadow-lg p-4 p-md-5 w-100" style="max-width: 600px;">
-          <!-- Floating Tech Shapes -->
-          <div class="floating-tech-shapes">
-            <div class="shape hexagon-1"></div>
-            <div class="shape hexagon-2"></div>
-            <div class="shape line-1"></div>
-            <div class="shape line-2"></div>
-            <div class="shape triangle-1"></div>
-            <div class="shape triangle-2"></div>
+        <!-- Floating Tech Shapes -->
+        <div class="floating-tech-shapes">
+          <div class="shape hexagon-1"></div>
+          <div class="shape hexagon-2"></div>
+          <div class="shape line-1"></div>
+          <div class="shape line-2"></div>
+          <div class="shape triangle-1"></div>
+          <div class="shape triangle-2"></div>
         </div>
         <div class="text-center ">
             <img 
